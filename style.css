@@ -94,7 +94,8 @@ p,h1,h2,h3,h4,h5,h6 {
     padding-bottom: 1rem;
 }
 .images>img{
-    max-height: 20rem;
+    max-height: 19rem;
+    object-fit: cover;
 }
 
 .prodcut-info{
@@ -179,6 +180,7 @@ h1{
 .product-description{
     color: var(--Dark-grayish-blue);
     margin-block:1rem ;
+    font-size:0.90rem;
 }
 
 
@@ -189,7 +191,7 @@ h1{
 .attribution {
     font-size: 14px;
     text-align: center;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
 }
 
 .attribution a {
