@@ -1,3 +1,5 @@
+/* //////////////////////////RESET//////////////////////////////// */
+
 *,*::before,*::after {
     box-sizing: border-box;
 }
@@ -28,28 +30,72 @@ p,h1,h2,h3,h4,h5,h6 {
     isolation: isolate;
 }
 
+/* //////////////////////////NAV//////////////////////////////// */
+
+.hamburger-menu{
+    display: block;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.25rem 1rem;
+
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.links{
+    display: none;
+    align-items: center;
+}
+
+.logo{
+    align-self: center;
+    width: 9rem;
+    margin-bottom: 0.225rem;
+}
+.shoping-acc{
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.avatar-img{
+    width: 30px;
+}
 
 
+/* //////////////////////////MAIN//////////////////////////////// */
 
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 765px;
+    justify-content: center;
+    margin: 0 auto;
 
+}
+.images{
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
 
-
-
-
-
-
-
-
-
-
-
+.prodcut-info{
+    display: grid;
+    grid-template-areas:
+    ''
+    ;
+}
 
 
 .attribution {
-    font-size: 11px;
+    font-size: 14px;
     text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(265, 91%, 54%);
 }
