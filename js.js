@@ -31,32 +31,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-let currentImageIndex = 0;
-const images = [
-    "images/image-product-1.jpg",
-    "images/image-product-2.jpg",
-    "images/image-product-3.jpg",
-    "images/image-product-4.jpg"
-];
 
-function changeImage(direction) {
-    const imageElement = document.getElementById('currentImage');
 
-    if (direction === 'prev') {
-        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-    } else if (direction === 'next') {
-        currentImageIndex = (currentImageIndex + 1) % images.length;
-    }
 
-    // Aplicar animación de transición (por ejemplo, desvanecimiento)
-    imageElement.style.opacity = 0;
-
-    // Cambiar la imagen después de que se complete la animación de transición
-    setTimeout(() => {
-        imageElement.src = images[currentImageIndex];
-        imageElement.style.opacity = 1;
-    },0); // Ajusta el tiempo de transición según tus necesidades
-}
 
 
 

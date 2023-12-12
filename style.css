@@ -135,36 +135,40 @@ p,h1,h2,h3,h4,h5,h6 {
     margin: 0 auto;
 
 }
-.images{
+
+.images {
     margin: 0 auto;
     padding-bottom: 1rem;
     position: relative;
+    overflow: hidden;
 }
 
-.images>img{
+.images>img {
     max-height: 19rem;
     object-fit: cover;
+    transition: transform 0.5s ease;
 }
-.prev-icon{
+
+.prev-icon,
+.next-icon {
     background-color: white;
     padding: 0.75rem;
     position: absolute;
     top: 40%;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+}
+
+.prev-icon {
     left: 1rem;
-    border-radius: 50%;
-    width: 39px;
-    height: 39px;
 }
-.next-icon{
-    background-color: white;
-    padding: 0.75rem;
-    position: absolute;
-    top: 40%;
+
+.next-icon {
     right: 1rem;
-    border-radius: 50%;
-    width: 39px;
-    height: 39px;
 }
+
 .prodcut-info{
     margin: 0 1.5rem;
     display: flex;
