@@ -9,34 +9,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="js.js"></script>
+  
 
   <title>Frontend Mentor | E-commerce product page | AtlasK</title>
 
 </head>
 <body>
 
-  <nav class="nav">
-    <div class="nav-menu">
-      <div class="hamburger-menu">
-        <img src="images/icon-menu.svg" alt="menu">
-      </div>
-      <img src="images/logo.svg" alt="Logo" class="logo">
-      <div class="links">
-        <a href="">Collections</a>
-        <a href="">Men</a>
-        <a href="">Women</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
-      </div>
+<nav class="nav">
+  <div class="nav-menu">
+    <div class="hamburger-menu" id="hamburger-menu">
+      <img src="images/icon-menu.svg" alt="menu">
     </div>
-
-    <div class="shoping-acc">
-      <img src="images/icon-cart.svg" alt="shop-cart">
-      <img src="images/image-avatar.png" alt="avatar" class="avatar-img">
+    <img src="images/logo.svg" alt="Logo" class="logo">
+    <div class="links">
+      <a href="">Collections</a>
+      <a href="">Men</a>
+      <a href="">Women</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
     </div>
+  </div>
 
-  </nav>
+  <div class="shoping-acc">
+    <img src="images/icon-cart.svg" alt="shop-cart">
+    <img src="images/image-avatar.png" alt="avatar" class="avatar-img">
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <img class="close" id="close" src="images/icon-close.svg" alt="">
+    <a href="#">Collections</a>
+    <a href="#">Men</a>
+    <a href="#">Women</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
 
 
   <main>
@@ -59,7 +68,7 @@
             </div>
 
             <div class="buttons">
-              <button><img src="images/icon-minus.svg" alt="">0 <img src="images/icon-plus.svg" alt=""></button>
+              <button><img class="minus-icon" src="images/icon-minus.svg" alt="">0<img class="plus-icon" src="images/icon-plus.svg" alt=""></button>
               <button><img src="images/icon-cart-button.svg" alt="">Add to cart</button>
             </div>
 
@@ -72,4 +81,5 @@
     Coded by <a href="#">Atlas Kaplan</a>.
   </footer>
 </body>
+<script src="js.js"></script>
 </html>
