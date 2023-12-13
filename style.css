@@ -250,12 +250,14 @@ b{
     position: relative;
     max-width: 375px;
     max-height: 350px;
+    
 }
 
 .image-container {
     display: flex;
     transition: transform 0.5s ease;
     width: 100%;
+    
 }
 
 .image {
@@ -263,6 +265,7 @@ b{
     object-fit: cover;
     max-width: 400px;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 @media (min-width: 900px) {
