@@ -34,8 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
 $(document).ready(function () {
 $(".image-container").slick({
     infinite: true,
@@ -45,13 +43,6 @@ $(".image-container").slick({
     nextArrow: $(".next-icon"),
 });
 });
-
-
-
-
-
-
-
 
 
 
