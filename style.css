@@ -133,21 +133,32 @@ p,h1,h2,h3,h4,h5,h6 {
     max-width: 765px;
     justify-content: center;
     margin: 0 auto;
+    
 
 }
 
 .images {
-    margin: 0 auto;
-    padding-bottom: 1rem;
+    margin: 0 auto 1rem;
     position: relative;
-    overflow: hidden;
+    max-width: 375px;
+    max-height: 350px;
+ }
+
+.image-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    max-width: 375;
 }
 
-.images>img {
+.image {
     max-height: 19rem;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    max-width: 400px;
+    max-height: 300px;
 }
+
+
 
 .prev-icon,
 .next-icon {
@@ -159,6 +170,7 @@ p,h1,h2,h3,h4,h5,h6 {
     width: 39px;
     height: 39px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .prev-icon {
@@ -168,7 +180,6 @@ p,h1,h2,h3,h4,h5,h6 {
 .next-icon {
     right: 1rem;
 }
-
 .prodcut-info{
     margin: 0 1.5rem;
     display: flex;
@@ -243,6 +254,7 @@ p,h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
     color: var(--orange);
     margin-bottom: 1rem;
+    padding-block: 0.25rem;
 }
 
 
