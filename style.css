@@ -315,7 +315,7 @@ b{
 @media (min-width: 900px) {
     .container{
         flex-direction: row;
-        padding-block: 4.5rem 3rem;
+        padding-block: 4.5rem 6rem;
     }
     .prices{
         flex-direction: column;
