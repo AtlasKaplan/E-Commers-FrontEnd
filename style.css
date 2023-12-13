@@ -133,7 +133,6 @@ p,h1,h2,h3,h4,h5,h6 {
     z-index: 500;
     border-radius: 8px;
     opacity: 0;
-    
 }
 b{
     border-bottom: solid 0.5px rgba(128, 128, 128, 0.24);
@@ -161,6 +160,19 @@ b{
         left: auto;
         right: 30px;
         transform: none;
+    }
+}
+@media (min-width: 768px) {
+    .modal {
+        top: 10.5%;
+        
+    }
+}
+@media (min-width: 1000px) {
+    .modal {
+        top: 13.85%;
+        right: 60px;
+
     }
 }
 
