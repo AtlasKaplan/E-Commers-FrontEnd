@@ -67,13 +67,15 @@ counterBtn.addEventListener("click", function (event) {
 });
 
 addToCartBtn.addEventListener("click", function () {
-
     // Actualizar el contenido y el estilo del elemento cart-amount
     cartAmount.textContent = contador;
-
-    // Ocultar el elemento cuando el contador es cero
     cartAmount.style.display = contador === 0 ? "none" : "inline"; // O el valor que necesites
+
+    // Reiniciar el contador del botón
+    contador = 0;
+    counterValue.textContent = contador;
 });
+
 
 
 
