@@ -107,11 +107,13 @@ p,h1,h2,h3,h4,h5,h6 {
     }
     .nav {
         margin-inline: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(109, 109, 109, 0.247);
     }
 }
 @media (min-width: 1000px){
     .nav{
-        margin-inline:5rem ;
+        margin:3rem 7.5rem 1rem;
     }
     .logo{
         margin-right: 1.75rem;
@@ -253,7 +255,6 @@ b{
 
 .image-container {
     display: flex;
-    transition: transform 0.5s ease;
     width: 100%;
     
 }
@@ -302,7 +303,7 @@ b{
 @media (min-width: 900px) {
     .container{
         flex-direction: row;
-        padding-block: 7.5rem 10rem;
+        padding-block: 7.5rem 3rem;
     }
     .prices{
         flex-direction: column;
@@ -319,7 +320,7 @@ b{
     }
     
     .buttons>button:last-child {
-        width: 215px;
+        width: 275px;
     }
     .prices{
         margin-bottom: 2rem !important;
@@ -457,7 +458,7 @@ h1{
 .attribution {
     font-size: 14px;
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .attribution a {
