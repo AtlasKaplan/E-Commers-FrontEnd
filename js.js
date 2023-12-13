@@ -62,3 +62,8 @@ var counterValue = document.getElementById("counterValue");
     }
     counterValue.textContent = contador;
     });
+
+
+
+
+    
