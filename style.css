@@ -78,8 +78,14 @@ p,h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
     color: var(--Dark-grayish-blue);
     margin-left: 1.25rem;
+    
 }
-
+.links>a:hover {
+    text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+    border-bottom: 4px solid var(--orange);
+    padding-bottom: 2.25rem;
+    border-radius: 2px;
+}
 .logo{
     align-self: center;
     width: 9rem;
@@ -100,7 +106,7 @@ p,h1,h2,h3,h4,h5,h6 {
         display: none;
     }
     .avatar-img {
-        min-width: 45px;
+        min-width: 50px;
     }
     .cart-amount{
         top: 1.75rem !important;
@@ -119,23 +125,26 @@ p,h1,h2,h3,h4,h5,h6 {
         margin-right: 1.5rem;
     }
     .cart-amount {
-        top: 3.35rem !important;
+        top: 3.45rem !important;
     }
 }
 .modal {
     position: fixed;
-    top: 24%;
+    top: 25.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 360px;
     height: 255px;
     background-color: white;
-    border: 1px solid #ccc;
+    box-shadow: 0 24px 32px rgba(0, 0, 0, 0.192);
+    /* Agrega una sombra ligera */
     padding: 20px;
     display: none;
     z-index: 500;
     border-radius: 8px;
     opacity: 0;
+    border: none;
+    /* Elimina el borde */
 }
 b{
     border-bottom: solid 0.5px rgba(128, 128, 128, 0.24);
@@ -159,7 +168,7 @@ b{
 
 @media (min-width: 500px) {
     .modal {
-        top: 8.5%;
+        top: 9%;
         left: auto;
         right: 30px;
         transform: none;
@@ -167,21 +176,23 @@ b{
 }
 @media (min-width: 768px) {
     .modal {
-        top: 10.5%;
-        
+        top: 11.25%;
     }
 }
 @media (min-width: 1000px) {
     .modal {
-        top: 13.85%;
+        top: 7.5rem;
         right: 60px;
-
     }
 }
 
 .shop-cart {
     cursor: pointer;
     position: relative;
+}
+.shop-cart:hover,
+.shop-cart.active {
+    filter: brightness(.1);
 }
 
 .cart-amount {
@@ -198,8 +209,14 @@ b{
 }
 
 .avatar-img{
-    width: 30px;
+    width: 35px;
     cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: all 0.25s ease-in-out;
+}
+.avatar-img:hover{
+    border: 2px solid var(--orange);
+    border-radius: 25px;
 }
 
 .mobile-menu {
@@ -280,19 +297,27 @@ b{
     max-width: 400px;
     cursor: zoom-in;
 }
-.images-previews{
-    display: flex;
+.images-previews {
+    display: none;
     gap: 1.55rem;
     padding-top: 1rem;
-    display: none;
 }
-.image-preview{
+
+.image-preview {
+    position: relative;
     height: 75px;
     width: 75px;
     border-radius: 8px;
     cursor: pointer;
-
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
 }
+
+.images-previews>*:hover{
+    opacity: 0.5;
+}
+
+
 @media (min-width:900px) {
     .image {
         max-height: 30rem;
@@ -404,6 +429,11 @@ b{
 }
 .minus-icon, .plus-icon{
     cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    
+}
+.minus-icon:hover,.plus-icon:hover{
+    opacity: 0.75;
 }
 .buttons>button:last-child{
     display: flex;
@@ -417,8 +447,11 @@ b{
     font-size: 0.90rem;
     font-weight: 700;
     cursor: pointer;
+    transition: all 0.25s ease-in-out;
 }
-
+.buttons>button:last-child:hover{
+    opacity: 0.75;
+}
 
 .prices{
     display: flex;
@@ -477,7 +510,7 @@ h1{
 .attribution {
     font-size: 14px;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .attribution a {

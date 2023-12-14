@@ -84,19 +84,28 @@ addToCartBtn.addEventListener("click", function () {
 
 
 var cartModal = document.getElementById('cart-modal');
-    var shopCart = document.getElementById('shop-cart');
+var shopCart = document.getElementById('shop-cart');
 
-    // Toggle para mostrar/ocultar el modal al hacer clic en el carrito
-    shopCart.addEventListener('click', function () {
-        cartModal.classList.toggle('active');
-    });
+// Toggle para mostrar/ocultar el modal al hacer clic en el carrito
+shopCart.addEventListener('click', function () {
+    cartModal.classList.toggle('active');
 
-    // Ocultar el modal al hacer clic fuera de él
-    window.addEventListener('click', function (event) {
-        if (!cartModal.contains(event.target) && event.target !== shopCart) {
-            cartModal.classList.remove('active');
-        }
-    });
+    // Aplicar o quitar la clase al shop-cart cuando el modal está activo o inactivo
+    if (cartModal.classList.contains('active')) {
+        shopCart.classList.add('active');
+    } else {
+        shopCart.classList.remove('active');
+    }
+});
+
+// Ocultar el modal al hacer clic fuera de él
+window.addEventListener('click', function (event) {
+    if (!cartModal.contains(event.target) && event.target !== shopCart) {
+        cartModal.classList.remove('active');
+        shopCart.classList.remove('active');
+    }
+});
+
 
 
 
