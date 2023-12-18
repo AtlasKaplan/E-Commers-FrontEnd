@@ -31,6 +31,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+var images = document.getElementById('images');
+var zoom = document.getElementById('modal-zoom');
+
+images.addEventListener('click', function() {
+    zoom.classList.remove('zoom');
+});
+
+
 
 
 
