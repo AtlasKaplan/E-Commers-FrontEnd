@@ -538,6 +538,7 @@ h1{
     position: absolute;
     padding-top:7.5rem ;
     top: 0;
+    z-index: 500;
 }
 
 .images-zoom{
@@ -550,21 +551,25 @@ h1{
 }
 .close-zoom{
     position: absolute;
-    right: 33.15%;
-    top: 9.5%;
+    right: 0.2rem;
+    top: -35px;
     cursor: pointer;
 }
+.close-zoom img {
+    width: 17px;
+}
 .close-zoom:hover{
-    filter: brightness(10);
+    filter:contrast(15) sepia(100) brightness(10);
 }
 .next-zoom, .prev-zoom{
     display: block !important;
 }
 .next-zoom{
-    right: 30rem;
-    top: 22rem;
+    right: -1.5rem;
+    top: 14.5rem;
     width: 43px;
     height: 43px;
+    position: absolute !important;
 }
 .prev-zoom{
     top: 14.5rem;
@@ -572,3 +577,4 @@ h1{
     width: 43px;
     height: 43px;
 }
+
