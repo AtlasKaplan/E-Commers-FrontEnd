@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 var images = document.getElementById('images');
-var zoom = document.getElementById('modal-zoom');
+var zoom = document.getElementById('zoom-container');
 var xZoom = document.getElementById('icon-close');
 
 images.addEventListener('click', function() {
