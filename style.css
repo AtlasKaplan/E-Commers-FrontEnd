@@ -316,9 +316,6 @@ b{
 .images-previews>*:hover{
     opacity: 0.5;
 }
-.zoom{
-    display: none;
-}
 
 @media (min-width:900px) {
     .image {
@@ -523,8 +520,8 @@ h1{
 
 /* //////////////////MODAL-zoom////////////////////////// */
 
-.zoom{
-    display: none;
+.zoom {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
 }
 .zoom-overlay{
     width: 100%;
@@ -578,3 +575,8 @@ h1{
     height: 43px;
 }
 
+@media (max-width:559px) {
+    .zoom{
+        display: none;
+    }
+}

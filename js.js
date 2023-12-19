@@ -32,12 +32,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 var images = document.getElementById('images');
-var zoom = document.getElementById('zoom-container');
+var zoom = document.getElementById('modal-zoom');
 var xZoom = document.getElementById('icon-close');
 
 images.addEventListener('click', function() {
     zoom.classList.remove('zoom');
 });
+
 xZoom.addEventListener('click', function() {
     zoom.classList.add('zoom');
 });
