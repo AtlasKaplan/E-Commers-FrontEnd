@@ -448,6 +448,7 @@ b{
     cursor: pointer;
     transition: all 0.25s ease-in-out;
 }
+
 .buttons>button:last-child:hover{
     opacity: 0.75;
 }
@@ -580,3 +581,46 @@ h1{
         display: none;
     }
 }
+
+
+
+
+
+/* //////////////////MODAL-zoom////////////////////////// */
+
+.cart-filled{
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    padding-top: 1.75rem;
+}
+.cart-prev{
+    width: 3.5rem;
+    border-radius: 7px;
+}
+.cart-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.checkout {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
