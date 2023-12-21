@@ -137,14 +137,12 @@ p,h1,h2,h3,h4,h5,h6 {
     height: 255px;
     background-color: white;
     box-shadow: 0 24px 32px rgba(0, 0, 0, 0.192);
-    /* Agrega una sombra ligera */
     padding: 20px;
     display: none;
     z-index: 500;
     border-radius: 8px;
     opacity: 0;
     border: none;
-    /* Elimina el borde */
 }
 b{
     border-bottom: solid 0.5px rgba(128, 128, 128, 0.24);

@@ -90,6 +90,11 @@ addToCartBtn.addEventListener("click", function () {
 
 
 
+if(cartAmount===0){
+
+} else{
+
+}
 
 
 
