@@ -602,6 +602,7 @@ h1{
     display: flex;
     align-items: center;
     gap: 1rem;
+    color: var(--Dark-grayish-blue);
 }
 
 .checkout {
@@ -612,7 +613,10 @@ h1{
     padding: 1rem;
     font-weight: 700;
 }
-
+#cart-total{
+    font-weight: 700;
+    color: black;
+}
 
 
 
