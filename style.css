@@ -592,6 +592,9 @@ h1{
     gap: 1.75rem;
     padding-top: 1.75rem;
 }
+.delete-icon{
+    cursor: pointer;
+}
 .cart-prev{
     width: 3.5rem;
     border-radius: 7px;
@@ -610,6 +613,11 @@ h1{
     border-radius: 7px;
     padding: 1rem;
     font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+.checkout:hover{
+    opacity: 0.75;
 }
 #cart-total{
     font-weight: 700;
