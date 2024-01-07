@@ -59,16 +59,7 @@ $(".image-container").slick({
 
 
 
-var counterBtn = document.getElementById("counterBtn");
-var counterValue = document.getElementById("counterValue");
-var addToCartBtn = document.getElementById("addToCartBtn");
-var cartAmount = document.getElementById("cartAmount");
-var cartFilled = document.getElementById("cart-filled");
-var emptyCart = document.getElementById('empty-cart');
-var totalProducts = document.getElementById('cart-total-products');
-var cartTotal = document.getElementById('cart-total');
 
-var contador = 0; // Inicializamos el contador en 0
 var counterBtn = document.getElementById("counterBtn");
 var counterValue = document.getElementById("counterValue");
 var addToCartBtn = document.getElementById("addToCartBtn");
@@ -120,7 +111,13 @@ addToCartBtn.addEventListener("click", function () {
 
 
 
+var deleteBtn = document.getElementById('delete-icon');
 
+deleteBtn.addEventListener('click', function(){
+    cartAmount.style.display = 'none';
+    cartFilled.style.display = 'none';
+    emptyCart.style.display = 'flex';
+})
 
 
 
