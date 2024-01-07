@@ -63,6 +63,8 @@ var counterBtn = document.getElementById("counterBtn");
 var counterValue = document.getElementById("counterValue");
 var addToCartBtn = document.getElementById("addToCartBtn");
 var cartAmount = document.getElementById("cartAmount");
+var cartFilled = document.getElementById("cart-filled");
+var emptyCart = document.getElementById('empty-cart');
 
 var contador = 0; // Inicializamos el contador en 0
 
@@ -79,23 +81,23 @@ counterBtn.addEventListener("click", function (event) {
 
 addToCartBtn.addEventListener("click", function () {
     // Actualizar el contenido y el estilo del elemento cart-amount
-    cartAmount.textContent = contador;
-    cartAmount.style.display = contador === 0 ? "none" : "inline"; // O el valor que necesites
+    if (contador === 0) {
+        // Si el contador es 0, establece el display en 'none' para ambos elementos
+        cartAmount.style.display = 'none';
+        cartFilled.style.display = 'none';
+        emptyCart.style.display = 'flex';
+
+    } else {
+        // Si el contador no es 0, actualiza el contenido y el estilo de cartAmount
+        cartAmount.textContent = contador;
+        emptyCart.style.display = 'none';
+        cartFilled.style.display = 'flex';
+    }
 
     // Reiniciar el contador del botón
     contador = 0;
     counterValue.textContent = contador;
 });
-
-
-
-
-if(cartAmount===0){
-
-} else{
-
-}
-
 
 
 

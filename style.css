@@ -595,6 +595,9 @@ h1{
 .delete-icon{
     cursor: pointer;
 }
+.delete-icon:hover{
+    opacity: 0.75;
+}
 .cart-prev{
     width: 3.5rem;
     border-radius: 7px;
