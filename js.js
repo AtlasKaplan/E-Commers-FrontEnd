@@ -65,10 +65,23 @@ var addToCartBtn = document.getElementById("addToCartBtn");
 var cartAmount = document.getElementById("cartAmount");
 var cartFilled = document.getElementById("cart-filled");
 var emptyCart = document.getElementById('empty-cart');
+var totalProducts = document.getElementById('cart-total-products');
+var cartTotal = document.getElementById('cart-total');
+
+var contador = 0; // Inicializamos el contador en 0
+var counterBtn = document.getElementById("counterBtn");
+var counterValue = document.getElementById("counterValue");
+var addToCartBtn = document.getElementById("addToCartBtn");
+var cartAmount = document.getElementById("cartAmount");
+var cartFilled = document.getElementById("cart-filled");
+var emptyCart = document.getElementById('empty-cart');
+var totalProducts = document.getElementById('cart-total-products');
+var cartTotal = document.getElementById('cart-total');
 
 var contador = 0; // Inicializamos el contador en 0
 
-counterValue.textContent = contador;
+var totalP = counterValue.textContent = contador;
+totalProducts.textContent = totalP;
 
 counterBtn.addEventListener("click", function (event) {
     if (event.target.classList.contains("plus-icon")) {
@@ -86,7 +99,6 @@ addToCartBtn.addEventListener("click", function () {
         cartAmount.style.display = 'none';
         cartFilled.style.display = 'none';
         emptyCart.style.display = 'flex';
-
     } else {
         // Si el contador no es 0, actualiza el contenido y el estilo de cartAmount
         cartAmount.textContent = contador;
@@ -94,10 +106,24 @@ addToCartBtn.addEventListener("click", function () {
         cartFilled.style.display = 'flex';
     }
 
+    // Actualizar totalProducts con el valor actualizado del contador
+    totalProducts.textContent = contador;
+
+    // Multiplicar el contador por 125 y asignar el resultado a cartTotal
+    cartTotal.textContent = '$' + contador * 125;
+
     // Reiniciar el contador del botón
     contador = 0;
     counterValue.textContent = contador;
 });
+
+
+
+
+
+
+
+
 
 
 
@@ -123,9 +149,3 @@ window.addEventListener('click', function (event) {
         shopCart.classList.remove('active');
     }
 });
-
-
-
-
-
-    
